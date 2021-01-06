@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const auth = useAuth();
+  console.log('jee');
 
   return (
     <div className={styles.container}>
