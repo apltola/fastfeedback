@@ -19,7 +19,7 @@ export default function Home() {
 
         <div>
           <p className={styles.code}>
-            auth: {JSON.stringify(auth.user.email || null, null, 2)}
+            auth: {JSON.stringify(auth.user ? auth.user.email : null, null, 2)}
           </p>
           <button onClick={() => auth.signinWithGithub()}>
             sign in with github
